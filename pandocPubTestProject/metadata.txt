@@ -1,0 +1,20 @@
+---
+title:
+- type: main
+  text: My Little Book
+- type: subtitle
+  text: An Adventure of Cull Wilson
+creator:
+- role: author
+  text: Colin Wilder
+- role: editor
+  text: Q. Rius Wordly
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  Frond Press
+rights: © 2021 Colin Wilder, CC BY-NC
+stylesheet: epub.css
+cover-image: gits.jpg
+...
+

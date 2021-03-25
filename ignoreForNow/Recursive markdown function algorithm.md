@@ -1,0 +1,5 @@
+ It would take a .md file as its argument and parse it, looking for characteristic syntax indicating that/where the argument file is calling another .md file. The parsing would not only look for the characteristic syntax, but also build a single long string of all the markdown it has checked along the way. If the function hits a reference to a .md file, it calls itself, using the .md file it's just found. When it gets to the bottom, it pops back up through the recursive levels, returning all the markdown it has passed through its dive(s). The final result would be to return a single .md file with all markdown inside it.
+
+It's then easy to feed this larger, returned, 100% standard markdown .md file to pandoc.
+
+Test case: Make a MD file  with some headings and text. Inside someplace, include text "#include otherFile.md". Yer function should dea with this by calling itself with otherFile.md as argument. If the function ever reads its whole argument without finding #include, it just returns the contents of its argument MD file. 
